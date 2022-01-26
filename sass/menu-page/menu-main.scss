@@ -1,0 +1,10 @@
+@import '../partials/reset';
+@import '../partials/colors';
+@import '../partials/typography';
+@import '../partials/margins';
+
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/media-queries';
+
+@import '../components/navigation';

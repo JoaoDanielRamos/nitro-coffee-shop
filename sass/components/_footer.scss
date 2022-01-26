@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  column-gap: 8rem;
+
+  // background-color: $nitro-primary-pink;
+  background: left -2% top 20% no-repeat url('../assets/logos/coffee-beans-logo-and-footer.svg'),
+    right -2% bottom 20% no-repeat url('../assets/logos/coffee-beans-logo-and-footer.svg'),
+    $nitro-primary-pink;
+  background-size: 12rem;
+
+  padding: 8rem 0;
+}
+
+.info {
+  & span {
+    font-weight: 800;
+  }
+
+  &__link img {
+    width: 5rem;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

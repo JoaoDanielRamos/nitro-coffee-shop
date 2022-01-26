@@ -1,0 +1,113 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $nitro-neutral-light-gray;
+  padding: 4rem 0;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 6rem;
+
+  width: 90%;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  padding: 2rem;
+
+  .container {
+    display: flex;
+    width: 100%;
+    padding: 10rem;
+    column-gap: 20rem;
+
+    .left {
+      flex: 1;
+      min-height: fit-content;
+      color: black;
+
+      &__icon-box {
+        display: flex;
+        justify-content: space-between;
+        .icon {
+          width: 55px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      .background {
+        position: relative;
+
+        .square {
+          min-width: 450px;
+          max-width: 550px;
+        }
+
+        .can {
+          padding: 2rem;
+          max-height: 55rem;
+          min-height: 45rem;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          display: block;
+          transition: all 2s;
+          z-index: 100;
+
+          display: block;
+
+          &:hover {
+            transform: translateX(-50%) translateY(-50%) rotate(360deg);
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          min-width: 45rem;
+          width: 55rem;
+          height: 100%;
+          border: 5px solid $nitro-primary-blue;
+          top: -20px;
+          left: -20px;
+        }
+      }
+    }
+  }
+
+  &__paragraph p {
+    text-align: center;
+    height: fit-content;
+    min-width: fit-content;
+    width: 80%;
+    display: block;
+
+    padding: 3rem;
+
+    font-size: $heading-3-font-size;
+    font-weight: $heading-3-font-weight;
+    background-color: $nitro-neutral-graphite;
+    color: $nitro-neutral-white;
+
+    & span {
+      font-weight: 800;
+    }
+  }
+}

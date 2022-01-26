@@ -1,0 +1,13 @@
+@import '../partials/reset';
+@import '../partials/colors';
+@import '../partials/typography';
+@import '../partials/margins';
+
+@import '../components/buttons';
+@import '../components/cards';
+@import '../components/navigation';
+@import '../components/footer';
+
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/media-queries';

@@ -1,0 +1,48 @@
+//  Typography
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+$heading-1-font-size: 6rem;
+$heading-1-font-weight: 300;
+
+$heading-2-font-size: 6rem;
+$heading-2-font-weight: 300;
+
+$heading-3-font-size: 3rem;
+$heading-3-font-weight: 300;
+
+$nav-link-font-size: 2.1rem;
+$nav-link-font-weight: 400;
+
+$paragraph-font-size: 1.8rem;
+$paragraph-font-weight: 400;
+
+.heading--1 {
+  font-size: $heading-1-font-size;
+  font-weight: $heading-1-font-weight;
+}
+
+.heading--2 {
+  font-size: $heading-2-font-size;
+  font-weight: $heading-2-font-weight;
+}
+
+.heading--3 {
+  font-size: $heading-3-font-size;
+  font-weight: $heading-3-font-weight;
+}
+
+.nav-text {
+  font-size: $nav-link-font-size;
+  font-weight: $nav-link-font-weight;
+}
+
+.paragraph-text {
+  font-size: $paragraph-font-size;
+  font-weight: $paragraph-font-weight;
+  line-height: 1.5;
+}

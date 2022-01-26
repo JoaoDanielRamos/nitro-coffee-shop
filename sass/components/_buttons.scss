@@ -1,0 +1,48 @@
+.btn {
+  min-width: 18rem;
+  max-width: 80%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+
+  background-color: $nitro-primary-blue;
+  color: $nitro-neutral-white;
+  border: none;
+  transition: 0.5s all;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $nitro-neutral-graphite;
+
+    left: -5px;
+    top: -5px;
+
+    transition: 0.5s all;
+  }
+
+  &:hover {
+    transform: translateY(-0.8rem);
+    background-color: #488c9f;
+  }
+
+  &:active {
+    transform: scale(0.95);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $nitro-neutral-graphite;
+
+      left: 0px;
+      top: 0px;
+    }
+  }
+}

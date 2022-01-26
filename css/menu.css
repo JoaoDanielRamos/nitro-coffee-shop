@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+.link-active {
+  color: #5bacc3 !important; }
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400; }
+
+.heading--1 {
+  font-size: 6rem;
+  font-weight: 300; }
+
+.heading--2 {
+  font-size: 6rem;
+  font-weight: 300; }
+
+.heading--3 {
+  font-size: 3rem;
+  font-weight: 300; }
+
+.nav-text {
+  font-size: 2.1rem;
+  font-weight: 400; }
+
+.paragraph-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.mg-sm {
+  margin-bottom: 1rem; }
+
+.mg-m {
+  margin-bottom: 2rem; }
+
+.mg-lg {
+  margin-bottom: 3rem; }
+
+.mg-xlg {
+  margin-bottom: 6rem; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center; }
+  .hero__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #393939;
+    color: #fff;
+    min-width: 30rem;
+    min-width: 28rem;
+    min-height: 18rem;
+    max-height: 20rem;
+    position: relative; }
+    .hero__menu::after {
+      content: '';
+      position: absolute;
+      border: 0.5rem solid #5bacc3;
+      width: 100%;
+      height: 100%;
+      top: -10px;
+      left: -10px; }
+
+.food-nav {
+  padding: 2.5rem 0;
+  background-color: #393939; }
+  .food-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 4rem; }
+  .food-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-left: 1rem;
+    border-left: 0.5rem solid #5bacc3;
+    transition: 0.5s all;
+    color: #fff; }
+    .food-nav a:hover {
+      border-left: 0.5rem solid #ffdd00;
+      color: #fff; }
+
+.menu-container {
+  width: 100vw; }
+
+.menu-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 10rem; }
+  .menu-box p:not(.menu-box__price) {
+    font-style: italic;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 1.5rem; }
+  .menu-box__price {
+    color: #5bacc3; }
+    .menu-box__price:not(:last-child) {
+      margin-bottom: 4rem; }
+
+.hot-drinks {
+  background-color: #fff0ed; }
+
+.cold-drinks {
+  background-color: #f7f7f7; }
+
+.pastries {
+  background-color: #fff0ed; }
+
+@media only screen and (max-width: 900px) {
+  .site-nav {
+    align-items: center;
+    justify-content: center; }
+  .food-nav__list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem; } }
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  background-color: #fff0ed; }
+  .site-nav__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    .site-nav__logo img {
+      width: 5.5rem; }
+    .site-nav__logo h2 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      color: #393939; }
+  .site-nav__list {
+    display: flex;
+    align-items: center; }
+    .site-nav__list li a {
+      font-size: 2.1rem;
+      font-weight: 400;
+      color: #393939;
+      text-decoration: none;
+      padding: 0 2rem;
+      transition: 0.5s all; }
+      .site-nav__list li a:hover {
+        color: #5bacc3; }

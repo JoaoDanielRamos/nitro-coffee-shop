@@ -1,0 +1,44 @@
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3rem 4rem;
+  background-color: $nitro-primary-pink;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    & img {
+      width: 5.5rem;
+    }
+
+    & h2 {
+      font-size: 4.5rem;
+      font-weight: 100;
+      color: $nitro-neutral-graphite;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    & li a {
+      font-size: $nav-link-font-size;
+      font-weight: $nav-link-font-weight;
+      color: $nitro-neutral-graphite;
+      text-decoration: none;
+
+      padding: 0 2rem;
+
+      transition: 0.5s all;
+
+      &:hover {
+        color: $nitro-primary-blue;
+      }
+    }
+  }
+}
